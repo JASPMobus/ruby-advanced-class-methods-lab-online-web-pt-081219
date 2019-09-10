@@ -56,7 +56,7 @@ class Song
     parts = filename.split(" - ")
     
     song = self.new
-    song.name = parts[1]
+    song.name = parts[1].split(".")[0]
     song.artist_name = parts[0]
     
     @@all << song
