@@ -58,5 +58,9 @@ class Song
     song = self.new
     song.name = parts[0]
     song.artist_name = parts[1]
+    
+    @@all << song
+    
+    song
   end
 end 
